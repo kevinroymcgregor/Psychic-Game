@@ -12,6 +12,14 @@
 <body>
     <script>
         
+        
+        document.onkeyup = function(event){
+            if (guessesLeft === 0) {
+                resetGuess();
+            }
+            else updateGuess();
+        }
+
     </script>
     <h1>The Psychic Game</h1>
 
