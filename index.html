@@ -11,13 +11,23 @@
 </head>
 <body>
     <script>
+        // let letter = 'a';
+        //  = "a";
+        updateLetter();
         
-        
+        // console.log(letter);
+
         document.onkeyup = function(event){
-            if (guessesLeft === 0) {
-                resetGuess();
+            if (event.key === letter){
+                winFunc();
             }
-            else updateGuess();
+            else if (guessesLeft === 1) {
+                lossFunc();
+            }
+            else {
+                updateGuess();
+                console.log(letter);
+            }
         }
 
     </script>
@@ -58,7 +68,7 @@
             <p class="left">Your guesses so far: </p> 
         </div> 
         <div class="col-4">    
-            <div id="currentGuesses">
+            <div id="currentGuesses"> </div>
         </div>
     </div>     
 </body>
