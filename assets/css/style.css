@@ -1,5 +1,42 @@
-.bucket {
-    /* background-image: url("../images/crystal-ball.png"); */
-    /* background-position: center; */
-    /* background-size: cover; */
+#crBall{
+  opacity: 0.2;
+  z-index: -1;
+  margin: 0%;
+  float: right;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
+
+/* body {
+    background-image: url("../images/crystal-ball.png"); 
+    background-position: center;
+    background-size: cover;
+}
+body::after {
+    content: "";
+    background: url("../images/crystal-ball.png"); 
+    opacity: 0.5;
+} */
+
+/* body {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+  }
+  
+  div::after {
+    content: "";
+    background: url("../images/crystal-ball.png");
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  } */
